@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Counter</h1>
+        <div class="calorie-form">
+            <label for="food">Food Item:</label>
+            <input type="text" id="food" placeholder="Enter food item...">
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" placeholder="Enter calories...">
+            <label for="meal">Meal:</label>
+            <select id="meal">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+            <button onclick="addCalorie()">Add Food Item</button>
+        </div>
+        <div class="meal-section">
+            <h2>Breakfast</h2>
+            <div id="breakfast-list" class="calorie-list"></div>
+        </div>
+        <div class="meal-section">
+            <h2>Lunch</h2>
+            <div id="lunch-list" class="calorie-list"></div>
+        </div>
+        <div class="meal-section">
+            <h2>Dinner</h2>
+            <div id="dinner-list" class="calorie-list"></div>
+        </div>
+        <div class="calorie-summary">
+            <div class="calorie-info">
+                <span>Total Calories:</span> <span id="total">0</span>
+            </div>
+            <div class="calorie-info">
+                <span>Calories Burned:</span> <span id="burn">0</span>
+            </div>
+            <div class="calorie-info">
+                <span>Calories Remaining:</span> <span id="remaining">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
